@@ -2,9 +2,11 @@
 int appWidth, appHeight;
 boolean start=false, noNowReallyStart=false;
 float quiteButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+float textX, textY;
 color quitButtonColor, yellow = #FFF700, purple = #BA00FF;
-  //
-  void setup() 
+PFont font;
+//
+void setup() 
 {
   size(800, 700);
   //fullscreen(); //displayWidth, displayHeight
@@ -18,6 +20,9 @@ color quitButtonColor, yellow = #FFF700, purple = #BA00FF;
   quitButtonY = centerY - ( appHeight * 1/4 ); 
   quitButtonWidth = appWidth * 1/2; //Line not point, thus use formula
   quitButtonHeight = appHeight * 1/2; //Line not point, thus use formula
+  textX = appWidth/2;
+  textY = appHeight/2;
+  font = createFont("Algerian-48.vlw", 55);
   //quiteButtonX = appWidth/4; 
   //quitButtonY = appHeight/4; 
   //quitButtonWidth = appWidth/2;
@@ -27,7 +32,7 @@ color quitButtonColor, yellow = #FFF700, purple = #BA00FF;
 void draw() 
 {
   if ( noNowReallyStart==true ) { //Actual start IF
-    background(155, 151, 157); //Night Mode not considered yet
+    background(random(0, 255), random(0, 255), random(0, 255)); //Night Mode not considered yet
     //
     //Logical rectangle
     println("X-Value", quiteButtonX, mouseX, quiteButtonX+quitButtonWidth);
@@ -39,6 +44,9 @@ void draw()
     } else {
       quitButtonColor = purple; //remember night mode
     } //End Hover Over
+    if( noNowReallyStart == true ) {
+      text("Quit", textX, textY);
+    }
     fill( quitButtonColor );
     rect(quiteButtonX, quitButtonY, quitButtonWidth, quitButtonHeight); //Quit button
   } //End IF-Start
