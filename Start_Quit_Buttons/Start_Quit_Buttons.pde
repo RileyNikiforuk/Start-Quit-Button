@@ -1,9 +1,12 @@
 //Global Variables
 int appWidth, appHeight;
-boolean start=false, noNowReallyStart=false;
+boolean start=false, noNowReallyStart=false, areYouSure=false;
 float quiteButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float textX, textY;
-color quitButtonColor, yellow = #FFF700, purple = #BA00FF;
+float quitX, quitY, quitWidth, quitHeight;
+color quitButtonColor, yellow = #FFF700, purple = #BA00FF, black = #030303;
+PFont font;
+float textSize;
 //
 void setup() 
 {
@@ -22,6 +25,9 @@ void draw()
   if ( noNowReallyStart==true ) { //Actual start IF
     ProgramDraw();
   } //End IF-Start
+  if ( areYouSure==true ) {
+    rect(50, 50, 50, 50);
+  }
 } //End draw
 //
 void keyPressed() 
@@ -39,7 +45,7 @@ void mousePressed()
   OS_Start();
   //
   //Quit Button: Logical rectangle, see println in draw()
-  if ( noNowReallyStart && mouseX > quiteButtonX && mouseX < quiteButtonX+quitButtonWidth && mouseY > quitButtonY && mouseY < quitButtonY+quitButtonHeight ) exit();
+  if ( noNowReallyStart && mouseX > quiteButtonX && mouseX < quiteButtonX+quitButtonWidth && mouseY > quitButtonY && mouseY < quitButtonY+quitButtonHeight ) areYouSure=true; //exit();
   //
 } //End mousePressed
 //
