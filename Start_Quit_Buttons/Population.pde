@@ -1,4 +1,8 @@
 String x = "X";
+String yes = "YES";
+String no = "NO";
+String question = "Are you sure that you want";
+String question2 = "to close this window?";
 
 void Population() {
   //float centerX = appWidth * 1/2; //point
@@ -18,5 +22,29 @@ void Population() {
   quitY = appHeight * 0.5/20;
   quitWidth = appWidth * 1/20;
   quitHeight = appHeight * 1/20;
-  textSize = appHeight/10;
+  textSize = appHeight/10;  
+  areYouSureX = appWidth/4;
+  areYouSureY = appHeight/4;
+  areYouSureWidth = appWidth/2;
+  areYouSureHeight = appHeight/3;
+  yesX = appWidth * 5/20;
+  yesY = appHeight * 8.7/20;
+  yesWidth = appWidth * 5/20;
+  yesHeight = appHeight * 2.97/20;
+  noX = appWidth * 10/20;
+  noY = appHeight * 8.7/20;
+  noWidth = appWidth * 5/20;
+  noHeight = appHeight * 2.97/20;
+  questionX = appWidth * 1/4;
+  questionY = appHeight * 1.25/5;
+  questionWidth = appWidth * 10/20;
+  questionHeight = appHeight * 3.7/20;
+  textX2 = appWidth * 5.5/20;
+  textY2 = appHeight * 6.8/20;
+  textX3 = appWidth * 6.5/20;
+  textY3 = appHeight * 7.5/20;
+  textX4 = appWidth * 6.78/20;
+  textY4 = appHeight * 10.45/20;
+  textX5 = appWidth * 19/20;
+  textY5 = appHeight * 10.45;
 } //End Population

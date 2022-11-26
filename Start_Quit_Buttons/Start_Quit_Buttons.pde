@@ -4,6 +4,11 @@ boolean start=false, noNowReallyStart=false, areYouSure=false;
 float quiteButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 float textX, textY;
 float quitX, quitY, quitWidth, quitHeight;
+float areYouSureX, areYouSureY, areYouSureWidth, areYouSureHeight;
+float yesX, yesY, yesWidth, yesHeight;
+float noX, noY, noWidth, noHeight;
+float questionX, questionY, questionWidth, questionHeight;
+float textX2, textY2, textX3, textY3, textX4, textY4, textX5, textY5;
 color quitButtonColor, yellow = #FFF700, purple = #BA00FF, black = #030303;
 PFont font;
 float textSize;
@@ -26,7 +31,7 @@ void draw()
     ProgramDraw();
   } //End IF-Start
   if ( areYouSure==true ) {
-    rect(50, 50, 50, 50);
+    questionDraw();
   }
 } //End draw
 //
