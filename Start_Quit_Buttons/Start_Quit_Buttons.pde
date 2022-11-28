@@ -9,7 +9,7 @@ float yesX, yesY, yesWidth, yesHeight;
 float noX, noY, noWidth, noHeight;
 float questionX, questionY, questionWidth, questionHeight;
 float textX2, textY2, textX3, textY3, textX4, textY4, textX5, textY5;
-color quitButtonColor, yellow = #FFF700, purple = #BA00FF, black = #030303;
+color quitButtonColor, yellow = #FFF700, purple = #BA00FF, black = #030303, red = #FF0000, white = #FFFFFF;
 PFont font;
 float textSize;
 //

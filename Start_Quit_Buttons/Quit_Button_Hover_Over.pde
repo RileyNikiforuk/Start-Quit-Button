@@ -1,7 +1,7 @@
 void quitButtonHoverOver() {
   if ( noNowReallyStart && mouseX > quiteButtonX && mouseX < quiteButtonX+quitButtonWidth && mouseY > quitButtonY && mouseY < quitButtonY+quitButtonHeight ) {
-    quitButtonColor = yellow; //remember nightmode
+    quitButtonColor = red; //remember nightmode
   } else {
-    quitButtonColor = purple; //remember night mode
+    quitButtonColor = white; //remember night mode
   } //End Hover Over
 } //End quitButtonHoverOver
